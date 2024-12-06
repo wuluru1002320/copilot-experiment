@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Snake Game</title>
+    <style></style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- <div class="container"> -->
+    <div
+      class="row c-1"
+      style="
+        outline: 0px;
+        margin: 20px 0px;
+        border-bottom: 1px solid rgb(239, 239, 239);
+        padding-bottom: 20px;
+        color: rgb(34, 34, 34);
+        font-family: Lato, 微軟正黑體, 'Microsoft JhengHei', Helvetica, Arial,
+          sans-serif;
+        font-size: 14px;
+      "
+    >
+      <div
+        class="contact-way col-lg-4 col-xs-12"
+        style="outline: 0px; padding: 15px 0px; text-align: center"
+      >
+        <div class="inner-contact" style="outline: 0px; display: inline-block">
+          <small style="outline: 0px; font-size: 12px; color: rgb(175, 127, 29)"
+            >公司團體大量訂做</small
+          >
+          <h3
+            style="
+              outline: 0px;
+              font-weight: 600;
+              line-height: 1.5;
+              margin-right: 0px;
+              margin-bottom: 0px;
+              margin-left: 0px;
+              font-size: 16px;
+              color: rgb(68, 68, 68);
+              font-family: Lato, 微軟正黑體, 'Microsoft JhengHei', Helvetica,
+                Arial, sans-serif;
+              padding: 15px 0px;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+            "
+          >
+            企業客戶部門
+          </h3>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSe5ZN1wpoECnPTWSWZd6O8_fJD86kh90b_lPXcu7FU6gk7eAQ/viewform?embedded=true"
+            style="
+              outline: 0px;
+              color: rgb(0, 0, 0);
+              line-height: 1.7;
+              transition: all 0.25s ease-in 0s;
+            "
+            >請填寫線上詢價單</a
+          >
+          <p
+            style="
+              outline: 0px;
+              margin-bottom: 0px;
+              color: rgb(102, 102, 102);
+              letter-spacing: 1px;
+              font-size: 13px;
+              line-height: 1.8;
+            "
+          >
+            傳圖詢價 mail：nannanbags@gmail.com
+          </p>
+          <br style="outline: 0px" />
+          <a
+            href="https://line.me/ti/p/Ulhej7AAwN#~"
+            style="
+              outline: 0px;
+              color: rgb(0, 0, 0);
+              line-height: 1.7;
+              transition: all 0.25s ease-in 0s;
+            "
+          >
+            <img
+              src="https://souvenir.tw/image/nan-line.jpg"
+              width="182"
+              height="182"
+              alt="帆布袋詢價"
+              style="
+                outline: 0px;
+                border-width: initial;
+                border-style: none;
+                height: auto;
+                max-width: 100%;
+              "
+          /></a>
+          <p
+            style="
+              outline: 0px;
+              margin-bottom: 0px;
+              color: rgb(102, 102, 102);
+              letter-spacing: 1px;
+              font-size: 13px;
+              line-height: 1.8;
+            "
+          >
+            Line ID : nannangood
+          </p>
+          <br style="outline: 0px" />透過行動條碼加入<br style="outline: 0px" />
+          <a
+            href="https://line.me/ti/p/Ulhej7AAwN#~"
+            style="
+              outline: 0px;
+              color: rgb(0, 0, 0);
+              line-height: 1.7;
+              transition: all 0.25s ease-in 0s;
+            "
+            >https://line.me/ti/p/Ulhej7AAwN#~</a
+          >
+        </div>
+      </div>
+
+      <div
+        class="contact-way col-lg-4 col-xs-12"
+        style="outline: 0px; padding: 15px 0px; text-align: center"
+      >
+        <div class="inner-contact" style="outline: 0px; display: inline-block">
+          <small style="outline: 0px; font-size: 12px; color: rgb(175, 127, 29)"
+            >批發及少量客製化</small
+          >
+          <h3
+            style="
+              outline: 0px;
+              font-weight: 600;
+              line-height: 1.5;
+              margin-right: 0px;
+              margin-bottom: 0px;
+              margin-left: 0px;
+              font-size: 16px;
+              color: rgb(68, 68, 68);
+              font-family: Lato, 微軟正黑體, 'Microsoft JhengHei', Helvetica,
+                Arial, sans-serif;
+              padding: 15px 0px;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+            "
+          >
+            零售及網購部門
+          </h3>
+          <a
+            href="https://www.facebook.com/nannangoods"
+            target="_blank"
+            style="
+              outline: 0px;
+              color: rgb(0, 0, 0);
+              line-height: 1.7;
+              transition: all 0.25s ease-in 0s;
+            "
+            >請FB私訊我們</a
+          >
+          <p
+            style="
+              outline: 0px;
+              margin-bottom: 0px;
+              color: rgb(102, 102, 102);
+              letter-spacing: 1px;
+              font-size: 13px;
+              line-height: 1.8;
+            "
+          >
+            傳圖詢價 mail：souvenir.tw@gmail.com
+          </p>
+          <br style="outline: 0px" /><a
+            href="https://line.me/ti/p/TJsRD7olNz"
+            style="
+              outline: 0px;
+              color: rgb(0, 0, 0);
+              line-height: 1.7;
+              transition: all 0.25s ease-in 0s;
+            "
+          >
+            <img
+              src="https://nannangoods.com/2019/0900400946.jpg"
+              width="182"
+              height="182"
+              alt="帆布包詢價"
+              style="
+                outline: 0px;
+                border-width: initial;
+                border-style: none;
+                height: auto;
+                max-width: 100%;
+              "
+          /></a>
+          <p
+            style="
+              outline: 0px;
+              margin-bottom: 0px;
+              color: rgb(102, 102, 102);
+              letter-spacing: 1px;
+              font-size: 13px;
+              line-height: 1.8;
+            "
+          >
+            Line ID : @976vkxvy
+          </p>
+          <br style="outline: 0px" />透過行動條碼加入
+          <br style="outline: 0px" />
+          <a
+            href="https://liff.line.me/1645278921-kWRPP32q/?accountId=976vkxvy"
+            style="
+              outline: 0px;
+              color: rgb(0, 0, 0);
+              line-height: 1.7;
+              transition: all 0.25s ease-in 0s;
+            "
+            >https://liff.line.me/1645278921-kWRPP32q/?accountId=976vkxvy</a
+          >
+        </div>
+      </div>
+      <div
+        class="contact-way col-lg-4 col-xs-12"
+        style="outline: 0px; padding: 15px 0px; text-align: center"
+      >
+        <div class="inner-contact" style="outline: 0px; display: inline-block">
+          <small style="outline: 0px; font-size: 12px; color: rgb(175, 127, 29)"
+            >布旗布簾客製化</small
+          >
+          <h3
+            style="
+              outline: 0px;
+              font-weight: 600;
+              line-height: 1.5;
+              margin-right: 0px;
+              margin-bottom: 0px;
+              margin-left: 0px;
+              font-size: 16px;
+              color: rgb(68, 68, 68);
+              font-family: Lato, 微軟正黑體, 'Microsoft JhengHei', Helvetica,
+                Arial, sans-serif;
+              padding: 15px 0px;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+            "
+          >
+            日式門簾/攤位布簾專門
+          </h3>
+          <a
+            href="https://www.facebook.com/akocoffe"
+            target="_blank"
+            style="
+              outline: 0px;
+              color: rgb(0, 0, 0);
+              line-height: 1.7;
+              transition: all 0.25s ease-in 0s;
+            "
+            >請FB私訊我們</a
+          >
+          <p
+            style="
+              outline: 0px;
+              margin-bottom: 0px;
+              color: rgb(102, 102, 102);
+              letter-spacing: 1px;
+              font-size: 13px;
+              line-height: 1.8;
+            "
+          >
+            傳圖詢價 mail：nannanservice@gmail.com
+          </p>
+          <br style="outline: 0px" /><a
+            href="https://line.me/ti/p/zuSUJBUx4h"
+            style="
+              outline: 0px;
+              color: rgb(0, 0, 0);
+              line-height: 1.7;
+              transition: all 0.25s ease-in 0s;
+            "
+          >
+            <img
+              src="https://nannangoods.com/2019/0423200381.jpg"
+              alt="帆布包詢價Line生活圈"
+              style="
+                outline: 0px;
+                border-width: initial;
+                border-style: none;
+                height: auto;
+                max-width: 100%;
+              "
+          /></a>
+          <p
+            style="
+              outline: 0px;
+              margin-bottom: 0px;
+              color: rgb(102, 102, 102);
+              letter-spacing: 1px;
+              font-size: 13px;
+              line-height: 1.8;
+            "
+          >
+            Line ID : @048ewmjy
+          </p>
+          <br style="outline: 0px" />透過行動條碼加入
+          <br style="outline: 0px" />
+          <a
+            href="https://liff.line.me/1645278921-kWRPP32q/?accountId=048ewmjy"
+            style="
+              outline: 0px;
+              color: rgb(0, 0, 0);
+              line-height: 1.7;
+              transition: all 0.25s ease-in 0s;
+            "
+            >https://liff.line.me/1645278921-kWRPP32q/?accountId=048ewmjy</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="row c-2"
+      style="
+        outline: 0px;
+        margin: 20px 0px;
+        border-bottom: 1px solid rgb(239, 239, 239);
+        padding-bottom: 20px;
+        color: rgb(34, 34, 34);
+        font-family: Lato, 微軟正黑體, 'Microsoft JhengHei', Helvetica, Arial,
+          sans-serif;
+        font-size: 14px;
+      "
+    >
+      <div
+        class="contact-way col-lg-4 col-xs-12"
+        style="outline: 0px; padding: 15px 0px; text-align: center"
+      >
+        <div class="inner-contact" style="outline: 0px; display: inline-block">
+          <small style="outline: 0px; font-size: 12px; color: rgb(175, 127, 29)"
+            >代客及網版印刷</small
+          >
+          <h3
+            style="
+              outline: 0px;
+              font-weight: 600;
+              line-height: 1.5;
+              margin-right: 0px;
+              margin-bottom: 0px;
+              margin-left: 0px;
+              font-size: 16px;
+              color: rgb(68, 68, 68);
+              font-family: Lato, 微軟正黑體, 'Microsoft JhengHei', Helvetica,
+                Arial, sans-serif;
+              padding: 15px 0px;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+            "
+          >
+            吉他大叔絹印社
+          </h3>
+          <p
+            style="
+              outline: 0px;
+              margin-bottom: 0px;
+              color: rgb(102, 102, 102);
+              letter-spacing: 1px;
+              font-size: 13px;
+              line-height: 1.8;
+            "
+          >
+            傳圖詢價 mail：jitaprintstudio@gmail.com
+          </p>
+          <br style="outline: 0px" /><a
+            href="https://line.me/ti/p/KHqOFruscB"
+            style="
+              outline: 0px;
+              color: rgb(0, 0, 0);
+              line-height: 1.7;
+              transition: all 0.25s ease-in 0s;
+            "
+          >
+            <img
+              src="https://nannangoods.com/2019/23200381.jpg"
+              width="182"
+              height="182"
+              alt=""
+              style="
+                outline: 0px;
+                border-width: initial;
+                border-style: none;
+                height: auto;
+                max-width: 100%;
+              "
+          /></a>
+          <p
+            style="
+              outline: 0px;
+              margin-bottom: 0px;
+              color: rgb(102, 102, 102);
+              letter-spacing: 1px;
+              font-size: 13px;
+              line-height: 1.8;
+            "
+          >
+            LINE ID : 23200381
+          </p>
+          <br style="outline: 0px" />透過行動條碼加入
+          <br style="outline: 0px" />
+          <a
+            href="https://line.me/ti/p/KHqOFruscB"
+            style="
+              outline: 0px;
+              color: rgb(0, 0, 0);
+              line-height: 1.7;
+              transition: all 0.25s ease-in 0s;
+            "
+            >https://line.me/ti/p/KHqOFruscB</a
+          >
+        </div>
+      </div>
+      <div
+        class="contact-way col-lg-4 col-xs-12"
+        style="outline: 0px; padding: 15px 0px; text-align: center"
+      >
+        <div class="inner-contact" style="outline: 0px; display: inline-block">
+          <small style="outline: 0px; font-size: 12px; color: rgb(175, 127, 29)"
+            >插畫類商品</small
+          >
+          <h3
+            style="
+              outline: 0px;
+              font-weight: 600;
+              line-height: 1.5;
+              margin-right: 0px;
+              margin-bottom: 0px;
+              margin-left: 0px;
+              font-size: 16px;
+              color: rgb(68, 68, 68);
+              font-family: Lato, 微軟正黑體, 'Microsoft JhengHei', Helvetica,
+                Arial, sans-serif;
+              padding: 15px 0px;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+            "
+          >
+            電繡服務/插畫自有品牌
+          </h3>
+          <p
+            style="
+              outline: 0px;
+              margin-bottom: 0px;
+              color: rgb(102, 102, 102);
+              letter-spacing: 1px;
+              font-size: 13px;
+              line-height: 1.8;
+            "
+          >
+            傳圖詢價 mail：nannanbag@gmail.com
+          </p>
+          <br style="outline: 0px" /><a
+            href="https://line.me/ti/p/mvLdbxtKzv"
+            style="
+              outline: 0px;
+              color: rgb(0, 0, 0);
+              line-height: 1.7;
+              transition: all 0.25s ease-in 0s;
+            "
+          >
+            <img
+              src="https://nannangoods.com/2019/0423141312.jpg"
+              width="186"
+              height="185"
+              alt=""
+              style="
+                outline: 0px;
+                border-width: initial;
+                border-style: none;
+                height: auto;
+                max-width: 100%;
+              "
+          /></a>
+          <p
+            style="
+              outline: 0px;
+              margin-bottom: 0px;
+              color: rgb(102, 102, 102);
+              letter-spacing: 1px;
+              font-size: 13px;
+              line-height: 1.8;
+            "
+          >
+            LINE ID : @853dmhfb
+          </p>
+          <br style="outline: 0px" />透過行動條碼加入
+          <br style="outline: 0px" />
+          <a
+            href="https://liff.line.me/1645278921-kWRPP32q/?accountId=853dmhfb"
+            style="
+              outline: 0px;
+              color: rgb(0, 0, 0);
+              line-height: 1.7;
+              transition: all 0.25s ease-in 0s;
+            "
+            >https://liff.line.me/1645278921-kWRPP32q/?accountId=853dmhfb</a
+          >
+        </div>
+      </div>
+      <div
+        class="contact-way col-lg-4 col-xs-12"
+        style="outline: 0px; padding: 15px 0px; text-align: center"
+      >
+        <div class="inner-contact" style="outline: 0px; display: inline-block">
+          <small style="outline: 0px; font-size: 12px; color: rgb(175, 127, 29)"
+            >客製化商品</small
+          >
+          <h3
+            style="
+              outline: 0px;
+              font-weight: 600;
+              line-height: 1.5;
+              margin-right: 0px;
+              margin-bottom: 0px;
+              margin-left: 0px;
+              font-size: 16px;
+              color: rgb(68, 68, 68);
+              font-family: Lato, 微軟正黑體, 'Microsoft JhengHei', Helvetica,
+                Arial, sans-serif;
+              padding: 15px 0px;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+            "
+          >
+            客製化圍裙/衣服/T-SHIRT
+          </h3>
+          <p
+            style="
+              outline: 0px;
+              margin-bottom: 0px;
+              color: rgb(102, 102, 102);
+              letter-spacing: 1px;
+              font-size: 13px;
+              line-height: 1.8;
+            "
+          >
+            傳圖詢價 mail：canvasbagcs@gmail.com
+          </p>
+          <br style="outline: 0px" />
+          <a
+            href="https://line.me/ti/p/KaTEVKj3pN"
+            style="
+              outline: 0px;
+              color: rgb(0, 0, 0);
+              line-height: 1.7;
+              transition: all 0.25s ease-in 0s;
+            "
+          >
+            <img
+              src="https://nannangoods.com/2019/0903843964.jpg"
+              width="182"
+              height="182"
+              alt=""
+              style="
+                outline: 0px;
+                border-width: initial;
+                border-style: none;
+                height: auto;
+                max-width: 100%;
+              "
+          /></a>
+          <p
+            style="
+              outline: 0px;
+              margin-bottom: 0px;
+              color: rgb(102, 102, 102);
+              letter-spacing: 1px;
+              font-size: 13px;
+              line-height: 1.8;
+            "
+          >
+            LINE ID : 0903843964
+          </p>
+          <br style="outline: 0px" />透過行動條碼加入
+          <br style="outline: 0px" />
+          <a
+            href="https://line.me/ti/p/KaTEVKj3pN"
+            style="
+              outline: 0px;
+              color: rgb(0, 0, 0);
+              line-height: 1.7;
+              transition: all 0.25s ease-in 0s;
+            "
+            >https://line.me/ti/p/KaTEVKj3pN</a
+          >
+        </div>
+      </div>
+    </div>
+    <div
+      class="row c-3"
+      style="
+        outline: 0px;
+        margin: 20px 0px;
+        border-bottom: 1px solid rgb(239, 239, 239);
+        padding-bottom: 20px;
+        color: rgb(34, 34, 34);
+        font-family: Lato, 微軟正黑體, 'Microsoft JhengHei', Helvetica, Arial,
+          sans-serif;
+        font-size: 14px;
+      "
+    >
+      <div
+        class="contact-way col-lg-4 col-xs-12"
+        style="outline: 0px; padding: 15px 0px; text-align: center"
+      >
+        <div class="inner-contact" style="outline: 0px; display: inline-block">
+          <small style="outline: 0px; font-size: 12px; color: rgb(175, 127, 29)"
+            >電繡商品</small
+          >
+          <h3
+            style="
+              outline: 0px;
+              font-weight: 600;
+              line-height: 1.5;
+              margin-right: 0px;
+              margin-bottom: 0px;
+              margin-left: 0px;
+              font-size: 16px;
+              color: rgb(68, 68, 68);
+              font-family: Lato, 微軟正黑體, 'Microsoft JhengHei', Helvetica,
+                Arial, sans-serif;
+              padding: 15px 0px;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+            "
+          >
+            繡帽子/代客刺繡
+          </h3>
+          <p
+            style="
+              outline: 0px;
+              margin-bottom: 0px;
+              color: rgb(102, 102, 102);
+              letter-spacing: 1px;
+              font-size: 13px;
+              line-height: 1.8;
+            "
+          >
+            傳圖詢價 mail：studywebsites@gmail.com
+          </p>
+          <br style="outline: 0px" /><a
+            href="https://line.me/ti/p/orP6CYJwwb"
+            style="
+              outline: 0px;
+              color: rgb(0, 0, 0);
+              line-height: 1.7;
+              transition: all 0.25s ease-in 0s;
+            "
+          >
+            <img
+              src="https://nannangoods.com/2019/0423140031.jpg"
+              alt="代客刺繡"
+              style="
+                outline: 0px;
+                border-width: initial;
+                border-style: none;
+                height: auto;
+                max-width: 100%;
+              "
+          /></a>
+          <p
+            style="
+              outline: 0px;
+              margin-bottom: 0px;
+              color: rgb(102, 102, 102);
+              letter-spacing: 1px;
+              font-size: 13px;
+              line-height: 1.8;
+            "
+          >
+            LINE ID : 0423140031
+          </p>
+          <br style="outline: 0px" />透過行動條碼加入<br
+            style="outline: 0px"
+          /><a
+            href="https://line.me/ti/p/orP6CYJwwb"
+            style="
+              outline: 0px;
+              color: rgb(0, 0, 0);
+              line-height: 1.7;
+              transition: all 0.25s ease-in 0s;
+            "
+            >https://line.me/ti/p/orP6CYJwwb</a
+          >
+        </div>
+      </div>
+      <div
+        class="contact-way col-lg-4 col-xs-12"
+        style="outline: 0px; padding: 15px 0px; text-align: center"
+      >
+        <div class="inner-contact" style="outline: 0px; display: inline-block">
+          <small style="outline: 0px; font-size: 12px; color: rgb(175, 127, 29)"
+            >紙包裝商品</small
+          >
+          <h3
+            style="
+              outline: 0px;
+              font-weight: 600;
+              line-height: 1.5;
+              margin-right: 0px;
+              margin-bottom: 0px;
+              margin-left: 0px;
+              font-size: 16px;
+              color: rgb(68, 68, 68);
+              font-family: Lato, 微軟正黑體, 'Microsoft JhengHei', Helvetica,
+                Arial, sans-serif;
+              padding: 15px 0px;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+            "
+          >
+            包裝/紙杯/紙袋/紙膠帶
+          </h3>
+          <p
+            style="
+              outline: 0px;
+              margin-bottom: 0px;
+              color: rgb(102, 102, 102);
+              letter-spacing: 1px;
+              font-size: 13px;
+              line-height: 1.8;
+            "
+          >
+            傳圖詢價 mail：vertbagcs@gmail.com
+          </p>
+          <br style="outline: 0px" /><a
+            href="https://line.me/ti/p/N9locdfgvv"
+            style="
+              outline: 0px;
+              color: rgb(0, 0, 0);
+              line-height: 1.7;
+              transition: all 0.25s ease-in 0s;
+            "
+            ><img
+              src="https://nannangoods.com/2019/vert.jpg"
+              width="182"
+              height="182"
+              alt="紙袋工廠"
+              style="
+                outline: 0px;
+                border-width: initial;
+                border-style: none;
+                height: auto;
+                max-width: 100%;
+              "
+          /></a>
+          <p
+            style="
+              outline: 0px;
+              margin-bottom: 0px;
+              color: rgb(102, 102, 102);
+              letter-spacing: 1px;
+              font-size: 13px;
+              line-height: 1.8;
+            "
+          >
+            LINE ID : 23140407
+          </p>
+          <br style="outline: 0px" />透過行動條碼加入<br
+            style="outline: 0px"
+          /><a
+            href="https://line.me/ti/p/N9locdfgvv"
+            style="
+              outline: 0px;
+              color: rgb(0, 0, 0);
+              line-height: 1.7;
+              transition: all 0.25s ease-in 0s;
+            "
+            >https://line.me/ti/p/N9locdfgvv</a
+          >
+        </div>
+      </div>
+      <div
+        class="contact-way col-lg-4 col-xs-12"
+        style="outline: 0px; padding: 15px 0px; text-align: center"
+      >
+        <div class="inner-contact" style="outline: 0px; display: inline-block">
+          <small style="outline: 0px; font-size: 12px; color: rgb(175, 127, 29)"
+            >各類客製品</small
+          >
+          <h3
+            style="
+              outline: 0px;
+              font-weight: 600;
+              line-height: 1.5;
+              margin-right: 0px;
+              margin-bottom: 0px;
+              margin-left: 0px;
+              font-size: 16px;
+              color: rgb(68, 68, 68);
+              font-family: Lato, 微軟正黑體, 'Microsoft JhengHei', Helvetica,
+                Arial, sans-serif;
+              padding: 15px 0px;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+            "
+          >
+            野餐墊/水瓶/其他禮贈品
+          </h3>
+          <p
+            style="
+              outline: 0px;
+              margin-bottom: 0px;
+              color: rgb(102, 102, 102);
+              letter-spacing: 1px;
+              font-size: 13px;
+              line-height: 1.8;
+            "
+          >
+            傳圖詢價 mail： nannangoods@gmail.com
+          </p>
+          <br style="outline: 0px" /><a
+            href="https://line.me/ti/p/YtAdvb8DO1"
+            style="
+              outline: 0px;
+              color: rgb(0, 0, 0);
+              line-height: 1.7;
+              transition: all 0.25s ease-in 0s;
+            "
+            ><img
+              src="https://nannangoods.com/2019/54900400.jpg"
+              width="182"
+              height="182"
+              alt=""
+              style="
+                outline: 0px;
+                border-width: initial;
+                border-style: none;
+                height: auto;
+                max-width: 100%;
+              "
+          /></a>
+          <p
+            style="
+              outline: 0px;
+              margin-bottom: 0px;
+              color: rgb(102, 102, 102);
+              letter-spacing: 1px;
+              font-size: 13px;
+              line-height: 1.8;
+            "
+          >
+            LINE ID : 54900400
+          </p>
+          <br style="outline: 0px" />透過行動條碼加入<br
+            style="outline: 0px"
+          /><a
+            href="https://line.me/ti/p/YtAdvb8DO1"
+            style="
+              outline: 0px;
+              color: rgb(0, 0, 0);
+              line-height: 1.7;
+              transition: all 0.25s ease-in 0s;
+            "
+            >https://line.me/ti/p/YtAdvb8DO1</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- </div> -->
+  </body>
+</html>

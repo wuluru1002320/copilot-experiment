@@ -1,0 +1,10 @@
+console.log(validateIP("192.168.0.1")); // Expected output: true
+console.log(validateIP("10.0.0.1")); // Expected output: true
+console.log(validateIP("172.16.0.1")); // Expected output: true
+console.log(validateIP("255.255.255.255")); // Expected output: true
+console.log(validateIP("0.0.0.0")); // Expected output: true
+console.log(validateIP("256.0.0.1")); // Expected output: false
+console.log(validateIP("192.168.0")); // Expected output: false
+console.log(validateIP("192.168.0.1.2")); // Expected output: false
+console.log(validateIP("192.168.0.01")); // Expected output: false
+console.log(validateIP("192.168.0.256")); // Expected output: false
